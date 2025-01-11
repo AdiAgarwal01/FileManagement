@@ -28,8 +28,13 @@
       <%= form.file_field :file, class: "form-control" %>
     </div>
 
-    <div class="form-actions">
-      <%= form.submit "Upload File", class: "btn-submit" %>
+    <div class="form-group">
+      <%= form.label :file, "Upload File" %>
+      <div id="dropzone-area" class="dropzone">
+        <div class="dz-message">
+          <p>Drag & Drop your file here or click to upload.</p>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>

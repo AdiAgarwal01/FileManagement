@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Listen for share button clicks
     document.querySelectorAll(".btn-share").forEach((btn) => {
       btn.addEventListener("ajax:success", (event) => {
-      	debugger;
         const url = event.detail[0].public_url; // Get public URL from response
         publicUrlInput.value = url;
         modal.style.display = "block";
