@@ -1,0 +1,306 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 2em;
+  }
+  
+  /* Upload Button */
+  .upload-button {
+    text-align: right;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .btn-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-upload:hover {
+    background-color: #45a049;
+  }
+  
+  /* Table Styling */
+  .file-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .file-table th,
+  .file-table td {
+    text-align: center !important; /* Align both headers and data in the center */
+    padding: 12px; /* Add consistent padding */
+    border: 0.5px solid #ddd; /* Add consistent borders */
+    vertical-align: middle;
+  }
+  
+  .file-table th {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .file-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .file-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .file-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Buttons in Actions Column */
+  .btn-action {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-download {
+    background-color: #007bff;
+  }
+  
+  .btn-download:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-share {
+    background-color: #17a2b8;
+  }
+  
+  .btn-share:hover {
+    background-color: #117a8b;
+  }
+  
+  .btn-public {
+    background-color: #28a745;
+  }
+  
+  .btn-public:hover {
+    background-color: #218838;
+  }
+  
+  /* Empty State */
+  .empty-state {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin: 40px 0;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    font-size: 2em;
+  }
+  
+  /* Form Container */
+  .form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Error Messages */
+  .error-messages {
+    color: red;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffb3b3;
+    border-radius: 5px;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #45a049;
+  }
+  
+  /* Back Link */
+  .back-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .back-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link a:hover {
+    text-decoration: underline;
+  }
+
+  .file-upload-container {
+    display: flex; /* Flexbox for dynamic height adjustment */
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content at the top */
+    min-width: 1000px;
+    min-height: 60vh; /* At least 80% of the viewport height */
+    width: 90%; /* Use 90% of the screen width */
+    max-width: 1200px; /* Cap the maximum width for large screens */
+    margin: 30px auto; /* Center horizontally and add vertical spacing */
+    /* padding: 20px; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensures padding does not add to width */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .file-upload-container {
+      width: 95%; /* Adjust width for smaller screens */
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .file-upload-container {
+      padding: 10px;
+    }
+  }
+  
+  /* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-btn {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  #public-url {
+    width: 80%;
+    padding: 8px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .btn-copy {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-copy:hover {
+    background-color: #0056b3;
+  }
+  

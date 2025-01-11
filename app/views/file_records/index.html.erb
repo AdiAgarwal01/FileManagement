@@ -1,0 +1,45 @@
+<div class="container file-upload-container">
+  <h1 class="page-title">Your Files</h1>
+
+  <!-- Upload New File Button -->
+  <div class="upload-button">
+    <%= link_to 'Upload New File', new_file_record_path, class: "btn-upload" %>
+  </div>
+
+  <!-- Table or Empty State -->
+  <table class="file-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>File Type</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @file_records.each do |fre| %>
+        <tr>
+          <td><strong><%= fre.title %></strong></td>
+          <td><%= fre.description.presence || "NA" %></td>
+          <td><%= fre.file_type %></td>
+          <td>
+            <%= link_to 'Download', rails_blob_path(fre.file, disposition: "attachment"), class: "btn-action btn-download" if fre.file.attached? %>
+            <%= link_to 'Delete', file_record_path(fre), method: :delete, data: { confirm: 'Are you sure you want to delete this entry?' }, class: "btn-action btn-delete" %>
+            <%= link_to 'Share publicly', share_file_record_path(fre), method: :post, remote: true, data: { id: fre.id }, class: "btn-action btn-share" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal HTML -->
+<div id="shareModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Public URL</h2>
+    <p>Your file is now publicly accessible at:</p>
+    <input type="text" id="public-url" readonly>
+    <button id="copy-url-btn" class="btn-action btn-copy">Copy to Clipboard</button>
+  </div>
+</div>

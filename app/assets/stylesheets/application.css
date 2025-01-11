@@ -13,3 +13,217 @@
  *= require_tree .
  *= require_self
  */
+
+ /* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  form .actions input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form .actions input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .links a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  /* General DataTable Styling */
+  .dataTables_wrapper {
+    font-size: 14px; /* Smaller font for better readability */
+    color: #333;
+  }
+  
+  /* "Show entries" Dropdown Styling */
+  .dataTables_length {
+    font-size: 12px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+  .dataTables_length label {
+    font-weight: 500;
+    margin-right: 5px;
+  }
+  
+  .dataTables_length select {
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Search Box Styling */
+  .dataTables_filter {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .dataTables_filter label {
+    font-weight: 500;
+  }
+  
+  .dataTables_filter input {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table Pagination Controls */
+  .dataTables_paginate {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dataTables_paginate .paginate_button {
+    padding: 4px 8px;
+    margin: 2px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff !important;
+    background-color: #007bff;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dataTables_paginate .paginate_button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dataTables_paginate .paginate_button.current {
+    background-color: #28a745;
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  /* Entries Info (Bottom Left) */
+  .dataTables_info {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Table Styling Improvements */
+  .file-table {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .file-table th {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .file-table td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .file-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Button Styling for Table Actions */
+  .btn-action {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn-download {
+    background-color: #007bff;
+  }
+  
+  .btn-download:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-share {
+    background-color: #17a2b8;
+  }
+  
+  .btn-share:hover {
+    background-color: #117a8b;
+  }
+  
+  
